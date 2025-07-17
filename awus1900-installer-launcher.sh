@@ -5,9 +5,10 @@ sudo apt update
 # && sudo apt full-upgrade -y maybe later :P
 sudo apt install -y dkms build-essential bc libelf-dev linux-headers-$(uname -r) git
 sudo apt install aircrack-ng wireshark kismet bettercap wifite
-git clone https://github.com/aircrack-ng/rtl8814au.git
-cd rtl8814au
-sudo make dkms_install
+#git clone https://github.com/aircrack-ng/rtl8814au.git
+#cd rtl8814au
+#sudo make dkms_install
+sudo apt install realtek-rtl8814au-dkms # use this better instead 88xxau
 sudo modprobe 8814au
 iwconfig
 sudo airmon-ng start wlan1
