@@ -1,0 +1,17 @@
+BSSID, PWR, Beacons, #Data, #/s, CH, MB, ENC, CIPHER, AUTH, ESSID
+00:11:22:33:44:55, -45,  1200,  300, 1, 6, 54, WPA2, CCMP, PSK, MyHomeWiFi
+66:77:88:99:AA:BB, -60,  800,   100, 0, 11, 54, WPA, TKIP, PSK, "CoffeeShop"
+AA:BB:CC:DD:EE:FF, -35,  2000,  500, 2, 1, 54, WPA2, CCMP, PSK, "Office_Network"
+11:22:33:44:55:66, -70,  500,   50, 0, 6, 54, OPN, , , PublicWiFi
+22:33:44:55:66:77, -55,  900,   200, 1, 11, 54, WPA2, CCMP, PSK, "Neighbor_WiFi"
+33:44:55:66:77:88, -80,  300,   20, 0, 1, 54, WEP, WEP, , OldRouter
+44:55:66:77:88:99, -42,  1500,  400, 2, 6, 54, WPA3, CCMP, SAE, "Modern_Network"
+
+Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
+AA:BB:CC:DD:EE:FF, 2025-07-18 10:00:05, 2025-07-18 10:05:15, -50,  150, 00:11:22:33:44:55, ""
+11:22:33:44:55:66, 2025-07-18 10:02:10, 2025-07-18 10:06:20, -70,   80, 66:77:88:99:AA:BB, "MyHomeWiFi","AnotherNetwork"
+FF:EE:DD:CC:BB:AA, 2025-07-18 10:01:30, 2025-07-18 10:07:45, -45,  200, AA:BB:CC:DD:EE:FF, "Office_Network"
+77:88:99:AA:BB:CC, 2025-07-18 10:03:20, 2025-07-18 10:08:10, -65,  120, 00:11:22:33:44:55, "MyHomeWiFi","PublicWiFi","CoffeeShop"
+88:99:AA:BB:CC:DD, 2025-07-18 10:04:15, 2025-07-18 10:09:30, -55,  180, 22:33:44:55:66:77, "Neighbor_WiFi"
+99:AA:BB:CC:DD:EE, 2025-07-18 10:05:00, 2025-07-18 10:10:15, -75,   90, 11:22:33:44:55:66, ""
+CC:DD:EE:FF:00:11, 2025-07-18 10:06:30, 2025-07-18 10:11:45, -40,  250, 44:55:66:77:88:99, "Modern_Network"
